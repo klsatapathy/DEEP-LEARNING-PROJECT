@@ -1,8 +1,19 @@
 # DEEP-LEARNING-PROJECT
 
+**COMPANY:-** CODTECH IT SOLUTIONS
 
+**NAME:-** LOKANATH SATAPATHY
+
+**INTERN ID:-** CT12WTOK
+
+**DOMAIN:-** DATA SCIENCE
+
+**DURATION:-** 12 NEEEKS
+
+**MENTOR:-** NEELA SANTOSH
 
 # Image Classification using PyTorch
+
 
 ## Project Overview
 This project demonstrates an end-to-end image classification pipeline using PyTorch on the CIFAR-10 dataset. The implementation includes:
