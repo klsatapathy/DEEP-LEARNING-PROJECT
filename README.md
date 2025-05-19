@@ -12,59 +12,102 @@
 
 **MENTOR:-** NEELA SANTOSH
 
-# Image Classification using PyTorch
 
+# 🧠 Image Classification using PyTorch
 
-## Project Overview
-This project demonstrates an end-to-end image classification pipeline using PyTorch on the CIFAR-10 dataset. The implementation includes:
+This project demonstrates a complete end-to-end **image classification pipeline** using **PyTorch**, built around the **CIFAR-10** dataset. The implementation includes everything from data preprocessing and augmentation to model training, evaluation, and visualization.
 
-1. Data loading and preprocessing with transformations and augmentation
-2. A custom CNN architecture with batch normalization and dropout
-3. Training with learning rate scheduling
-4. Performance evaluation and visualization
-5. Prediction analysis and confidence scoring
+---
 
-## Key Features
+## 🚀 Project Highlights
 
-- **Data Augmentation**: Random crops and horizontal flips for better generalization
-- **Model Architecture**: 
-  - Sequential CNN blocks with BatchNorm and ReLU
-  - Dropout layers to prevent overfitting
-- **Training Process**:
-  - Adam optimizer with ReduceLROnPlateau scheduler
-  - Cross-entropy loss
-  - GPU acceleration support
-- **Evaluation**:
-  - Training loss and test accuracy tracking
-  - Visualization of learning curves
-  - Sample predictions with confidence scores
+### ✅ Features
 
-## Technical Details
+- **🔄 Data Augmentation**
+  - Random cropping and horizontal flipping to improve generalization.
 
-- **Dataset**: CIFAR-10 (10 classes, 32x32 color images)
+- **🧱 Model Architecture**
+  - Custom CNN with:
+    - Multiple convolutional blocks
+    - Batch Normalization and ReLU activations
+    - Dropout layers for regularization
+
+- **🧪 Training Strategy**
+  - Optimizer: `Adam`
+  - Loss: `CrossEntropyLoss`
+  - Scheduler: `ReduceLROnPlateau`
+  - Supports GPU acceleration for faster training
+
+- **📊 Evaluation**
+  - Tracks training loss and test accuracy
+  - Plots learning curves
+  - Displays sample predictions with confidence scores
+
+---
+
+## 📚 Technical Details
+
+- **Dataset**: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
+  - 10 classes
+  - 32x32 color images
 - **Model**: Custom CNN achieving ~88% test accuracy
-- **Training**:
-  - Batch size: 128
-  - Learning rate: 0.001
-  - Epochs: 25
-  - Data augmentation: RandomCrop, RandomHorizontalFlip
-  - Normalization using CIFAR-10 statistics
+- **Training Configuration**:
+  - **Batch Size**: 128
+  - **Learning Rate**: 0.001
+  - **Epochs**: 25
+  - **Data Augmentation**:
+    - `transforms.RandomCrop`
+    - `transforms.RandomHorizontalFlip`
+  - **Normalization**: Using CIFAR-10 mean and std
 
-## Usage
+---
 
-The notebook provides complete code for:
-1. Loading and preprocessing data
-2. Defining and training the model
-3. Evaluating performance
-4. Visualizing results
-5. Making predictions with confidence scores
+## 💡 Usage
 
-## Requirements
+The notebook/script includes:
 
-- PyTorch
-- torchvision
-- matplotlib
-- numpy
-- tqdm
+1. 📥 Data loading and preprocessing
+2. 🏗 Model building and training
+3. 📈 Performance tracking
+4. 🖼 Result visualization
+5. 🔍 Prediction analysis with confidence scores
 
-The implementation leverages GPU acceleration when available and includes comprehensive visualization of both training progress and model predictions.
+---
+
+## 📦 Requirements
+
+- `torch`
+- `torchvision`
+- `matplotlib`
+- `numpy`
+- `tqdm`
+
+Install them using pip:
+
+```bash
+pip install torch torchvision matplotlib numpy tqdm
+````
+
+---
+
+## 📸 Output Previews
+
+* Training/Validation Loss Curves
+* Accuracy per Epoch
+* Sample Predictions with Confidence Scores
+
+---
+
+## 🖥 GPU Acceleration
+
+The implementation automatically uses GPU (if available) to accelerate training.
+
+
+## 📬 Feedback
+
+Feel free to fork, contribute, or open issues for any bugs or suggestions!
+
+---
+
+**Happy Coding! 🚀**
+
